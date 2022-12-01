@@ -1,0 +1,113 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+nav, footer {
+    width: 100vw;
+}
+
+nav {
+    height: 15rem;
+    background-color: blueviolet;
+}
+
+#container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#left-sidebar ul {
+    /* align-items: center;
+    display: flex;
+    flex-direction: column; */
+}
+
+#left-sidebar ul > li {
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    list-style: none;
+    background-color: aqua;
+}
+
+#content {
+    width: 60rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+#right-sidebar {
+    margin: 0 auto;
+    width: 40rem;
+    height: 40rem;
+    background-color: aqua;
+}
+
+footer {
+    background-color: coral;
+    height: 10px;
+    margin-top: 1rem;
+}
+/* This will only apply to screens between 0-768px (768px is a typical phone screen size, easier to start with phone-size designs) */
+/* The only screen but is to avoid the same issue with screenless devices like printers */
+/* Could also do a min-max like @media only screen and (min-width: blahblah) and (max-width: blahblah) */
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-color: white;
+    }
+    /* Here's an example of multiple selectors */
+    nav, footer {
+        width: 100vw;
+        height: 100px;
+    }
+
+    nav {
+        background-color: blueviolet;
+    }
+
+    footer {
+        background-color: coral;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left-sidebar ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 3px;
+    }
+
+    #left-sidebar ul > li {
+        width: 90vw;
+        height: 20px;
+        margin-top: 10px;
+        background-color: aqua;
+    }
+
+    #content {
+        width: 90vw;
+        height: 400px;
+        background-color: whitesmoke;
+        margin: 0 auto;
+    }
+
+    #right-sidebar {
+        margin: 0 auto;
+        width: 90vw;
+        height: 150px;
+        background-color: aqua;
+    }
+
+}

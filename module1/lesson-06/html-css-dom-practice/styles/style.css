@@ -1,6 +1,6 @@
 /* color scheme --> https://coolors.co/f7ebec-ddbdd5-ac9fbb-59656f-1d1e2c */
 html {
-    font-size: 10px;
+    font-size: 10px; /* baseline for rem in the rest of the documents. 1rem = 10px, usually easiest to use cuz we can just multiply by 10 */
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@ li:hover {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /*means the color will be inherited by it's parent*/
 }
 
 #home, #curriculum {
@@ -78,9 +78,9 @@ footer {
 iframe {
     object-fit: cover;
     position: absolute;
-    top: 0;
+    top: 0; /* starts it in the top left of it's container */
     left: 0;
-    height: 100%;
+    height: 100%; /* assigns it to the exact size of the container */
     width: 100%;
     border: 1px solid black;
     opacity: 0.8;
